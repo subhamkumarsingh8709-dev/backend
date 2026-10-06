@@ -11,6 +11,11 @@ GROQ_MODEL = "openai/gpt-oss-120b"
 QDRANT_URL = os.getenv("QDRANT_URL")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
+FRONTEND_ORIGINS = os.getenv(
+    "FRONTEND_ORIGINS",
+    "http://localhost:5173,http://127.0.0.1:5173",
+).split(",")
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = Path("data")
 
