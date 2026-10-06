@@ -1,0 +1,8 @@
+groq
+dotenv
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+qdrant_client
+sentence_transformers
